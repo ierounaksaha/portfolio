@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rounak - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover{
+            color: rgb(130, 130, 235);
+            font-size: 1.01rem;
+        }
+
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.7rem;
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 125px 0;
+        }
+
+        .firstSection > div{
+            width: 30%;
+        }
+
+        .firstSection .leftSection{
+            font-size: 2.5rem;
+        }
+
+        .leftSection .buttons{
+            padding: 23px;
+        }
+
+        .leftSection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .firstSection .rightSection img{
+            width: 80%;
+        }
+
+        .secondSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 125px 0;
+        }
+
+        .secondSection .rightSection{
+            width: 40%;
+        }
+
+        .secondSection .leftSection{
+            width: 80%;
+        }
+
+        .secondSection .rightSection img{
+            width: 60%;
+            border-radius: 10px;
+            margin-left: 120px;
+        }
+
+        .purple{
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray{
+            color: gray;
+            font-size: 2rem;
+        }
+
+        #element{
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            justify-content: space-between;
+        }
+
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+
+        footer{
+            margin-top: 50px;
+            background-color: #0e0e1a;
+        }
+
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer > div{
+            width: 123px;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+
+        }
+    </style>
+
+    <style>
+        #scrollToTopBtn {
+            display: none; /* Initially hide the button */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            background-color: #1e2167;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+          }
+          
+          #scrollToTopBtn.show {
+            display: block; /* Show the button when it has the "show" class */
+          }
+          
+          #scrollToTopBtn:hover {
+            background-color: #0056b3;
+          }
+          
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Rounak's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" onclick="scrollToSection('#about')">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Rounak</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <a href="https://github.com/ierounaksaha" target="_blank"><button class="btn">GitHub</button></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="Image">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="about">
+            <div class="leftSection"><h1>About Me</h1>
+                <div>
+                    Hello! I'm Rounak Saha, a passionate individual with a diverse skill set in Flutter development, web development,
+                    and web design. Let me tell you a bit about what I do and what drives me:
+                    <br>
+                    <!-- <h1>Flutter Development</h1> -->
+                    <span class="text-gray">Flutter Development</span><br>
+                    As a Flutter developer, I specialize in crafting cross-platform mobile applications that are not only visually
+                    stunning but also deliver a seamless user experience. I enjoy leveraging Flutter's rich widget library and hot
+                    reload feature to rapidly prototype and iterate on ideas. From building engaging UIs to integrating complex
+                    functionality, I take pride in creating robust and responsive mobile apps that cater to various user needs.
+                    <br>
+                    <!-- <h1>Web Development</h1> -->
+                    <span class="text-gray">Web Development</span><br>
+                    In the realm of web development, I am adept at using a range of technologies such as HTML, CSS, JavaScript, and
+                    frameworks like React.js and Vue.js. I excel in crafting interactive and user-friendly websites that combine
+                    aesthetics with functionality. Whether it's developing responsive layouts, implementing dynamic content, or
+                    optimizing performance, I strive to deliver web solutions that elevate the digital presence of businesses and
+                    individuals.
+                    <br>
+                    <!-- <h1>Web Design</h1> -->
+                    <span class="text-gray">Web Design</span><br>
+                    With a keen eye for design principles and trends, I also delve into web design to ensure that every project I work
+                    on not only functions flawlessly but also looks visually appealing. From creating wireframes and mockups to
+                    designing user interfaces that prioritize usability and accessibility, I believe in the power of thoughtful design
+                    to enhance the overall user experience.
+                </div></div>
+            <div class="rightSection">
+                <img src="my.jpg" alt="Image">
+            </div>
+        </section>
+    </main>
+    <button id="scrollToTopBtn">&#8962;</button>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Rounak's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <div class="footer-fifth">
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; rounakishere.com | All rigts reserved
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer','Web Designer','Flutter Developer'],
+          typeSpeed: 50,
+        });
+    </script>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.querySelector(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+    <script>// Get the button element
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        
+        // Function to check and toggle button visibility
+        function checkScroll() {
+          if (window.pageYOffset > 100) {
+            // Show the button when scrolled down 100px from the top
+            scrollToTopBtn.classList.add('show');
+          } else {
+            // Hide the button when not scrolled enough
+            scrollToTopBtn.classList.remove('show');
+          }
+        }
+        
+        // Scroll to top when the button is clicked
+        scrollToTopBtn.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+        
+        // Listen for scroll events to toggle button visibility
+        window.addEventListener('scroll', checkScroll);
+        </script>
+</body>
+
+</html>
