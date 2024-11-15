@@ -1,0 +1,24 @@
+#scrollToTopBtn {
+    display: none; /* Initially hide the button */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #1e2167;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+  
+#scrollToTopBtn.show {
+    display: block; /* Show the button when it has the "show" class */
+}
+  
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
