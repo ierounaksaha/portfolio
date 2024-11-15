@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/homebtn.css">
 </head>
@@ -121,46 +122,8 @@
     </footer>
     
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-          strings: ['Web Developer','Web Designer','Flutter Developer'],
-          typeSpeed: 50,
-        });
-    </script>
-    <script>
-        function scrollToSection(sectionId) {
-            const section = document.querySelector(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    </script>
-
-    <script>// Get the button element
-        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-        
-        // Function to check and toggle button visibility
-        function checkScroll() {
-          if (window.pageYOffset > 100) {
-            // Show the button when scrolled down 100px from the top
-            scrollToTopBtn.classList.add('show');
-          } else {
-            // Hide the button when not scrolled enough
-            scrollToTopBtn.classList.remove('show');
-          }
-        }
-        
-        // Scroll to top when the button is clicked
-        scrollToTopBtn.addEventListener('click', () => {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
-        });
-        
-        // Listen for scroll events to toggle button visibility
-        window.addEventListener('scroll', checkScroll);
-        </script>
+    <script src="js/typing.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/floating_homebtn.js"></script>
 </body>
-
 </html>
